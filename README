@@ -1,0 +1,48 @@
+FT Map Screen Saver
+==================
+
+A lightweight Windows 10/11 screen saver that recreates the classic "defrag disk map" animation vibe.
+
+**Visual only** it does **not** access, analyze, or defragment your disks.
+
+Contents
+--------
+- Introduction
+- Build
+- Run / Install
+- Tweak Colors & Balance
+- License
+
+Introduction
+------------
+- WinForms / .NET 8 (`net8.0-windows`)
+- Full-screen on all monitors
+- Exits on mouse/keyboard activity (like a normal screen saver)
+
+Build
+-----
+Requirements: .NET 8 SDK
+
+Fast build:
+- Run `build.cmd`
+- Output: `dist\FTMapScreenSaver.scr`
+
+Run / Install
+-------------
+Run:
+- `dist\FTMapScreenSaver.scr /s`   (screen saver)
+- `dist\FTMapScreenSaver.scr /c`   (config dialog)
+- `dist\FTMapScreenSaver.scr /p <HWND>` (preview; Windows calls this)
+
+Install:
+- Right-click the `.scr` → **Install**
+  (or copy it to `C:\Windows\System32\` if you prefer the old-school way)
+
+Tweak Colors & Balance
+----------------------
+- Palette (colors): `DiskMapSimulator.cs` → `DiskMapPalette`
+- Distribution (how much red/black/green you see): `GenerateInitialMap()` weights and segment counts
+
+License
+-------
+MIT. See `LICENSE`.

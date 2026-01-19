@@ -1,0 +1,35 @@
+# Build outputs
+bin/
+obj/
+dist/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+*.log
+
+# NuGet / packages (usually not needed for SDK-style, but safe)
+packages/
+
+# Test results / coverage (in case you add later)
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
